@@ -1,0 +1,62 @@
+#blank {
+  background-image: url("images/blank.png");
+  
+}
+  
+#block {
+  background-image: url("images/block.png");
+}
+
+#column {
+  background-image: url("images/column.png");
+}
+
+#diag1 {
+  background-image: url("images/diag1.png");
+}
+
+#diag2 {
+  background-image: url("images/diag2.png");
+}
+
+#row {
+  background-image: url("images/row.png");
+}
+td 
+{
+  display: block;
+  overflow-y: hidden;
+  max-height: 100px;
+}
+div.height {
+  display: fixed;
+  max-height: 100px;
+  max-width: 100px;
+  overflow: hidden;
+}
+
+body {
+  font-size: 21px;
+  color: gold;
+  background-color: rgb(17,13,18);
+}
+th.output {
+  color: rgba(222, 196, 110, 0.75)
+}
+p {
+  font-size: 14px;
+}
+p.picks{
+  font-size: 52px;
+  text-shadow: 1px 1px 4px yellow;
+  line-height: 0.1;
+}
+input[type=button]{
+  background-color: gold;
+  color: rgb(17,13,18);
+  width: 100px;
+  font-size: 25px;
+}
+a {
+  color: yellow;
+}

@@ -3,10 +3,165 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
+    <title>Mini Cactpot Calculator</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <h1>Mini Cactpot Calculator</h1>
+    <p>Welcome to my little Mini Cactpot Calculator! To use pick a number on the drop down menu on each corresponding cactpot square that matches on your ticket. As you scratch off squares on the ticket in game add that number to the calculator. After you put in your picks you can see along each line what the average payout and max payout will be. It's up to you if you want to chase down a jackpot or pick the best average. I will suggest though to always reveal boxes in this priority: Center, then far corners.</p>
+    <p>You can reset a set square by picking the blank first option. You can also reset everything with the handy reset button.</p>
+    <input type="button" id="reset" name="reset" value="Reset">
+      <table style="width: 500px">
+        <tr>
+          <th class="output" id ="diag1">Avg: <br>Max:</th>
+          <th class="output" id="column">Avg: <br>Max:</th>
+          <th class="output" id="column">Avg: <br>Max:</th>
+          <th class="output" id="column">Avg: <br>Max:</th>
+          <th class="output" id="diag2">Avg: <br>Max:</th>
+        </tr>
+        <tr>
+          <th class="output" id="row">Avg: <br>Max:</th>
+          <th class="input" id="block">
+            <select id="0">
+              <option value="0"></option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+            </select>
+          </th>
+          <th class="input" id="block">
+            <select id="1">
+              <option value="0"></option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+            </select>
+          </th>
+          <th class="input" id="block">
+            <select id="2">
+              <option value="0"></option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+            </select>
+          </th>
+          <th class="9" id="blank"></th>
+        </tr>
+        <tr>
+          <th class="output" id="row">Avg: <br>Max:</th>
+          <th class="input" id="block">
+            <select id="3">
+              <option value="0"></option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+            </select>
+          </th>
+          <th class="input" id="block">
+            <select id="4">
+              <option value="0"></option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+            </select>
+          </th>
+        <th class="input" id="block">
+            <select id="5">
+              <option value="0"></option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+            </select>
+          </th>
+          <th class="14" id="blank"></th>
+        </tr>
+        <tr>
+          <th class="output" id="row">Avg: <br>Max:</th>
+          <th class="input" id="block">
+            <select id="6">
+              <option value="0"></option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+            </select>
+          </th>
+          <th class="input" id="block">
+            <select id="7">
+              <option value="0"></option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+            </select>
+          </th>
+          <th class="input" id="block">
+            <select id="8">
+              <option value="0"></option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+            </select>
+          </th>
+          <th class="19" id="blank"></th>
+        </tr>
+      </table>
+    <br>
+  Picks left:
+  <p class="picks">3</p>
+  <p>Thankyou for using my Mini Cactpot Calculator. You can check out the source on github <a href="https://github.com/okram2k/minicactpot" target="_blank">here</a>. Also feel free to check out my portfolio <a href="https://okram2k.github.io/" target="_blank">here</a> as well!
     <script src="script.js"></script>
   </body>
 </html>
